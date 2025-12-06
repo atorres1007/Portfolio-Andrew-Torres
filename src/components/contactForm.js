@@ -4,9 +4,9 @@ import emailjs from 'emailjs-com';
 export default function ContactForm () {
 
     //EmailJS API info from .env file
-    const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID
-    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    const PUBLIC_KEY = "rNeP60GtuK7NvwmWk"
+    const SERVICE_ID = "service_8wjc8tq"
+    const TEMPLATE_ID = "template_5ilgsz5"
 
     //Form Input States
     const [fromName, setFromName] = useState('')
@@ -101,8 +101,10 @@ export default function ContactForm () {
                     console.log(error.text);
                     alert('Something Went Wrong')
                 });
-
-            e.target.reset()
+            
+            setFromName('')
+            setFromEmail('')
+            setMessage('')
         }
     };
 
