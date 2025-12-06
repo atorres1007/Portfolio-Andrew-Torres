@@ -63,15 +63,32 @@ export default function ContactForm () {
             setErrorMessage(true);
         }
         else {
-            setErrorMessage('')
+            setErrorMessageText('')
             setErrorMessage(false);
         }
     };
+
+    const checkFields = () => {
+        if (fromName.trim() === '') {
+            setErrorFromNameText('Please Enter a Name')
+            setErrorFromName(true);
+        }
+        if (fromEmail.trim() === '') {
+            setErrorFromEmailText('Invalid email format');
+            setErrorFromEmail(true);
+        }
+        if (message.trim() === '') {
+            setErrorMessageText('Please Enter a Message')
+            setErrorMessage(true);
+        }  
+    }
 
     //Send form info to EmailJS API
     const sendEmail = (e) => {
 
         e.preventDefault();
+
+        checkFields();
 
         if (!errorFromName && !errorFromEmail && !errorMessage) {
 
