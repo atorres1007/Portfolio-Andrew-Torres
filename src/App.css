@@ -1,0 +1,459 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #162832;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 220px 5vw 100px 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.page-title {
+  color: #fb5350;
+  display: flex;
+  margin: 0px;
+  padding: 0px 5vw 0px 5vw;
+  font-size: clamp(25px,5vw, 35px);
+}
+
+
+
+/*Header*/
+header {
+  position: fixed;
+  display:flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background-color: #162832;
+  height: 200px;
+  z-index: 99;
+}
+header .logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vw;
+}
+header .logo {
+  font-size: clamp(20px, 3vw, 40px);
+  color: white;
+  text-decoration: none;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5vw;
+  font-size: clamp(15px, 2vw, 20px);
+}
+header nav a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: clamp(18px, 2vw, 30px);
+}
+.active-header {
+  color: #fb5350;
+}
+.inactive-header {
+  color: white;
+}
+header .sidebar-icon {
+  display: none;
+}
+
+
+
+/*Footer*/
+footer {
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  padding: 5vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 99;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .logo, footer nav a, footer .socials a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: clamp(15px, 2vw, 20px);
+}
+footer .logo-container, footer nav, footer .socials {
+  display: flex;
+  flex: 1;
+}
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .socials a{
+  font-size: 50px;
+  text-decoration: none;
+  padding: 0px;
+  margin: 20px;
+}
+
+
+
+
+/*Home*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}
+.home-page {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: calc(100vh - 200px);
+}
+.react-icon {
+  animation: spin 25s linear infinite;
+  position: relative;
+  left: calc(-50% - 5vw);
+  top: 25%;
+  color: #fb5350;
+  font-size: 50vh;
+}
+.home-page .logo {
+  position: absolute;
+  top: 50vh;
+  right: clamp(10px, 10%, 250px);
+  color: #fb5350;
+  font-size: clamp(20px, 2vw, 60px);
+}
+.home-page .logo span {
+  color: white;
+}
+
+
+
+/*Projects*/
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.project-item {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  width: clamp(300px, 30vw, 600px);
+  height: clamp(200px, 20vw, 400px);
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-item:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fb5350;
+  transition: background-color 0.25s ease-in ;
+}
+.project-item img {
+  width: 100%;
+  height: auto;
+  flex: 1;
+}
+.project-item div {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px 0px 0px 0px;
+}
+.individual-project-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.individual-project-page img {
+  width: 75%;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.individual-project-page img:hover {
+  border: 2px solid #fb5350;
+  border-radius: 5px;
+}
+.individual-project-page .project-name, .individual-project-page a {
+  font-size: clamp(20px, 5vw, 40px);
+  color: white;
+  text-decoration: none;
+}
+.individual-project-page .project-name:hover {
+  color: #fb5350;
+}
+.individual-project-page .project-description {
+  color: white;
+  justify-self: end;
+}
+
+
+
+/*Resume*/
+.resume {
+  margin: 5vw;
+}
+.resume img{
+  border: 2px solid #fb5350;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+
+
+/*About*/
+.about {
+  color: white;
+  text-align: left;
+  margin: 5vw;
+  font-size: clamp(18px, 3vw, 30px);
+}
+.about span {
+  color: #fb5350;
+}
+
+
+
+/*Contact Form*/
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  background-color: black;
+  width: 100%;
+  max-width: 1000px;
+  margin: 5vw;
+  border: 2px solid #fb5350;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.name-and-email {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: nowrap;
+}
+.name-and-email .name, .name-and-email .email, .message {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.name-and-email input {
+  margin: 20px 20px 10px 20px;
+  padding: 5px;
+  background-color: #162832;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+  font-size: clamp(18px, 3vw, 30px);
+}
+.name-and-email input:focus {
+  outline: none;
+  border: 1px solid #fb5350;
+}
+.message textarea{
+  margin: 20px 20px 10px 20px;
+  height: clamp(100px, 10vh, 750px);
+  resize: none;
+  background-color: #162832;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+  font-size: clamp(18px, 3vw, 20px);
+}
+.message textarea:focus {
+  outline: none;
+  border: 1px solid #fb5350;
+}
+.contact-form button {
+  margin: 10px 20px 20px 20px;
+  padding: 5px;
+  background-color: #fb5350;
+  border: 1px solid #162832;
+  border-radius: 5px;
+  color: black;
+  height: auto;
+  width: 25%;
+  font-size: clamp(15px, 3vw, 20px);
+  justify-self: center;
+  align-self: center;
+}
+.contact-form button:hover {
+  cursor: pointer;
+}
+.contact-form .form-error {
+  color: #fb5350;
+  font-size:clamp(15px, 2vw, 18px);
+  margin: 10px 20px 0px 20px;
+  text-align: left;
+}
+
+
+
+/*Sidebar*/
+.sidebar {
+  display: none;
+  position: absolute;
+  background-color: #fb5350;
+  height: 50%;
+  width: 50%;
+  top: 100px;
+  left: 0px;
+  z-index: 99;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebar nav a {
+  color: black;
+  text-decoration: none;
+  margin: 20px 0px 20px 0px ;
+}
+.sidebar-button {
+  display: none;
+}
+
+
+.dropdown {
+  background-color: #162832;
+  position: fixed;
+  top: 200px;
+  width: 5vw;
+  height: auto;
+  z-index: 1;
+}
+.dropdown .socials {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown .socials a{
+  color:#fb5350;
+  font-size: 3vw;
+  margin: 1vw;
+}
+
+
+/*Mobile CSS*/
+@media (max-width:600px) {
+  .main-content {
+    flex: 1;
+    padding: 120px 5vw 100px 5vw;
+  }
+
+  /*Header*/
+  header nav {
+    display: none;
+  }
+  header {
+    height: 100px;
+  }
+  header .sidebar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 50px;
+    left: 28px;
+    top: 28px;
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+
+  /*Footer*/
+  footer {
+    flex-direction: column;
+  }
+  footer nav {
+    flex-direction: column;
+  }
+
+  /*display sidebar on mobile and open and close movements*/
+  .sidebar {
+    display: block;
+    position: fixed;
+    transition: left 0.3s ease-in-out;
+  }
+  .sidebar.open {
+    left: 0px;
+  }
+  .sidebar.close {
+    left: -51%
+  }
+  header .icon:hover {
+    cursor: pointer;
+  }
+
+  /*Dropdown*/
+  .dropdown {
+    display: none;
+  }
+
+  /*Contact Form*/
+  .name-and-email {
+    flex-direction: column;
+  }
+
+  /*Home Page*/
+  .home-page {
+    flex-direction: column;
+    width: auto;
+    flex: 1;
+  }
+  .home-page .logo {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .react-icon {
+    animation: spin 15s linear infinite;
+    position: relative;
+    left: 0;
+    top: 0;
+    color: #fb5350;
+    font-size: 20vh;
+  }
+}

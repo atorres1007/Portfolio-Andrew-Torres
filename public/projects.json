@@ -1,0 +1,26 @@
+[
+    {
+        "name": "MET Museum",
+        "projectURL":"https://met-museum-project.vercel.app/",
+        "imgURL": "/images/met-project.jpeg",
+        "description": "Simple application that uses the MET Museum API to display random pieces."
+    },
+        {
+        "name": "Bonsai",
+        "projectURL":"https://bonsai-website-clone-ufv9.vercel.app/",
+        "imgURL": "/images/bonsai-project.jpeg",
+        "description": "Clone of bonsai website I found with a nice UI and wanted to recreate."
+    },
+        {
+        "name": "Countries",
+        "projectURL":"https://countries-app-wine-two.vercel.app/",
+        "imgURL": "/images/countries-project.PNG",
+        "description": "Application that uses a countries API to let the user search for countries and receive information on that country"
+    },
+        {
+        "name": "AI Art",
+        "projectURL": "https://ai-art-generator-omega.vercel.app/",
+        "imgURL": "/images/ai-project.PNG",
+        "description": "AI art application that calls an AI API to create a piece of art based on the user's input"
+    }
+]
