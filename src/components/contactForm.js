@@ -1,27 +1,27 @@
-import { useState} from "react"
+import { useState } from "react"
 import emailjs from 'emailjs-com';
 
 export default function ContactForm () {
 
     //EmailJS API info from .env file
-    const PUBLIC_KEY = "rNeP60GtuK7NvwmWk"
-    const SERVICE_ID = "service_8wjc8tq"
-    const TEMPLATE_ID = "template_5ilgsz5"
+    const PUBLIC_KEY = "rNeP60GtuK7NvwmWk";
+    const SERVICE_ID = "service_8wjc8tq";
+    const TEMPLATE_ID = "template_5ilgsz5";
 
     //Form Input States
-    const [fromName, setFromName] = useState('')
-    const [fromEmail, setFromEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [fromName, setFromName] = useState('');
+    const [fromEmail, setFromEmail] = useState('');
+    const [message, setMessage] = useState('');
 
     //Error Message States
-    const [errorFromNameText, setErrorFromNameText] = useState('')
-    const [errorFromEmailText, setErrorFromEmailText] = useState('')
-    const [errorMessageText, setErrorMessageText] = useState('')
+    const [errorFromNameText, setErrorFromNameText] = useState('');
+    const [errorFromEmailText, setErrorFromEmailText] = useState('');
+    const [errorMessageText, setErrorMessageText] = useState('');
 
     //Error States
-    const [errorFromName, setErrorFromName] = useState(true)
-    const [errorFromEmail, setErrorFromEmail] = useState(true)
-    const [errorMessage, setErrorMessage] = useState(true)
+    const [errorFromName, setErrorFromName] = useState(true);
+    const [errorFromEmail, setErrorFromEmail] = useState(true);
+    const [errorMessage, setErrorMessage] = useState(true);
 
     const nameChange = (e) => {
 
@@ -71,17 +71,17 @@ export default function ContactForm () {
     const checkFields = () => {
         if (fromName.trim() === '') {
             setErrorFromNameText('Please Enter a Name')
-            setErrorFromName(true);
+            setErrorFromName(true)
         }
         if (fromEmail.trim() === '') {
-            setErrorFromEmailText('Invalid email format');
-            setErrorFromEmail(true);
+            setErrorFromEmailText('Invalid email format')
+            setErrorFromEmail(true)
         }
         if (message.trim() === '') {
             setErrorMessageText('Please Enter a Message')
-            setErrorMessage(true);
+            setErrorMessage(true)
         }  
-    }
+    };
 
     //Send form info to EmailJS API
     const sendEmail = (e) => {
@@ -93,14 +93,14 @@ export default function ContactForm () {
         if (!errorFromName && !errorFromEmail && !errorMessage) {
 
             emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-                .then((result) => {
-                    console.log(result.text);
-                    alert('Message Sent Successfully')
-                }, 
-                (error) => {
-                    console.log(error.text);
-                    alert('Something Went Wrong')
-                });
+            .then((result) => {
+                console.log(result.text);
+                alert('Message Sent Successfully')
+            }, 
+            (error) => {
+                console.log(error.text);
+                alert('Something Went Wrong')
+            })
             
             setFromName('')
             setFromEmail('')

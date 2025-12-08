@@ -195,8 +195,12 @@ footer .socials a{
   justify-content: center;
   align-items: center;
 }
+.individual-project-page .imgURL {
+  margin: 0px 15% 0px 15%;
+  width: 70%;
+}
 .individual-project-page img {
-  width: 75%;
+  width: 100%;
   border: 2px solid transparent;
   border-radius: 5px;
 }
@@ -209,12 +213,13 @@ footer .socials a{
   color: white;
   text-decoration: none;
 }
-.individual-project-page .project-name:hover {
+.individual-project-page .project-name a:hover {
   color: #fb5350;
 }
 .individual-project-page .project-description {
   color: white;
   justify-self: end;
+  font-size: clamp(15px, 5vw, 25px);
 }
 
 

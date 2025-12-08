@@ -45,7 +45,7 @@ function App() {
 
       <Dropdown />
 
-      <div className='main-content'>
+      <main className='main-content'>
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/about' element={<AboutPage />}/>
@@ -55,7 +55,7 @@ function App() {
           <Route path='/contact' element={<ContactPage/>}/>
           <Route path='*' element={<HomePage/>}/>
         </Routes>
-      </div>
+      </main>
 
       <Footer/>
 
