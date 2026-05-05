@@ -3,7 +3,7 @@ export default function ResumePage () {
         <>
         <span className="page-title">Resume</span>
         <div className="resume">
-           <img src="/images/ResumePhoto.png" alt="resume"/>
+           <img src="/images/Resume2026.PNG" alt="resume"/>
         </div>
         </>
     )

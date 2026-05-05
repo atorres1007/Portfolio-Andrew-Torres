@@ -8,7 +8,7 @@ export default function HomePage () {
 
             <div className="logo">
                 <h1>Andrew Torres</h1>
-                <span>Web Developer</span>
+                <span>Software Developer</span>
             </div>
             
         </div>
