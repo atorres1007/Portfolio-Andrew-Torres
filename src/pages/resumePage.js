@@ -1,10 +1,14 @@
+import Resume from '../Torres_Andrew_Resume2026.pdf'
+
 export default function ResumePage () {
     return (
         <>
-        <span className="page-title">Resume</span>
-        <div className="resume">
-           <img src="/images/Resume2026.PNG" alt="resume"/>
-        </div>
+            <span className="page-title">Resume</span>
+            <div className="resume">
+                <a href={Resume} download='Torres_Andrew_Resume' target='_blank'>
+                    <img src="/images/ResumePhoto.PNG" alt="resume"/>
+                </a>
+            </div>
         </>
     )
 }
