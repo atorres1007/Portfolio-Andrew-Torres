@@ -9,8 +9,6 @@ import Footer from './components/footer';
 import ProjectsPage from './pages/projectsPage';
 import AboutPage from './pages/aboutPage';
 import HomePage from './pages/homePage';
-import ResumePage from './pages/resumePage';
-import ContactPage from './pages/contactPage';
 import IndividualProjectPage from './pages/individualProjectPage'
 import Sidebar from './components/sidebar';
 import Dropdown from './components/dropdown';
@@ -51,8 +49,6 @@ function App() {
           <Route path='/about' element={<AboutPage />}/>
           <Route path='/projects' element={<ProjectsPage projects={projects}/>}/>
           <Route path='/projects/:projectName' element={<IndividualProjectPage projects={projects}/>}/>
-          <Route path='/resume' element={<ResumePage/>}/>
-          <Route path='/contact' element={<ContactPage/>}/>
           <Route path='*' element={<HomePage/>}/>
         </Routes>
       </main>

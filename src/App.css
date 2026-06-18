@@ -224,29 +224,54 @@ footer .socials a{
 
 
 
-/*Resume*/
-.resume {
-  margin: 5vw;
-}
-.resume img{
-  border: 2px solid #fb5350;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-}
-
-
-
 /*About*/
 .about {
   color: white;
   text-align: left;
-  margin: 5vw;
-  font-size: clamp(18px, 3vw, 30px);
+  padding: 20px 5vw 0px 5vw;
+  font-size: clamp(18px, 3vw, 20px);
 }
 .about span {
   color: #fb5350;
+}
+.about-item {
+  color: white;
+  text-align: left;
+}
+.about-title {
+  color: #fb5350;
+  display: flex;
+  margin: 0px;
+  padding: 50px 5vw 0px 5vw;
+  font-size: clamp(20px, 4vw, 30px);
+}
+.about-item-title {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 5vw 0px calc(5vw + 50px);
+  font-size: clamp(15px, 3vw, 20px);
+}
+.about-item-sub {
+  display: flex;
+  padding: 20px 5vw 0px calc(5vw + 50px);
+  font-size: clamp(15px, 3vw, 20px);
+}
+.about-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 5vw 0px calc(5vw + 50px);
+  font-size: clamp(15px, 3vw, 25px);
+}
+.emphasis {
+  color: #fb5350;
+  padding: 0px 10px 0px 0px;
+}
+.seperator {
+  margin: 25px 45vw 15px calc(5vw + 50px);
 }
 
 

@@ -2,20 +2,53 @@ export default function AboutPage () {
     return (
         <>
             <span className="page-title">About Me</span>
-            
-            <div className="about">
-                Hello! My name is Andrew Torres and I am a software engineer who 
-                has a passion for creating <span>innovative</span> and <span>dependable </span> 
-                web applications with amazing user interfaces. I consider myself an expert in 
-                front-end languages like <span>Javascript</span>, <span>HTML</span>, and 
-                <span> CSS</span>. While I have used several front-end frameworks and libraries, 
-                I have the most experience with <span>React</span> and <span>Next.JS</span>. 
-                In terms of back-end experience, I have used several databases and frameworks such as 
-                <span> Express.JS</span> and <span>MongoDB</span>. Additionally, I have an 
-                unrivaled passion for front-end development and a lot to prove. All in all, 
-                I love learning new skills/technologies, taking on new challenges, and 
-                becoming a better software developer each and every day. Please take a look 
-                at my projects and don't be afraid to send me an email with any questions you have.
+
+            <div className="about-item">
+                <div className="about-item-title">
+                    Software Developer in South Florida
+                </div>
+                <div className="about-item-title">
+                    Recent M.S. Graduate from BU
+                </div>
+                <div className="about-item-title">
+                    Front-end, Backend, and Mobile Development
+                </div>
+            </div>
+                
+            <span className='about-title'>Work Experience</span>
+            <div className='about-item'>
+                <div className="about-item-title">
+                    <span>Shopdango - Front-End Developer</span>
+                    <span>June 2022 - November 2022</span>
+                </div>
+
+                <div className="about-item-sub"> 
+                    <span>Worked with a small Agile team to create custom React components, itegrate necessary MongoDB databases, and meet sprint deadlines.</span>
+                </div>
+                  
+                <div className="about-item-sub">
+                    <span className="emphasis">React </span>
+                    <span className="emphasis">MongoDB</span>
+                    <span className="emphasis">Agile</span>
+                </div>
+                
+            </div>
+
+            <span className='about-title'>Education</span>
+            <div className="about-item">
+                <div className="about-item-title">
+                    <span>Boston University</span>
+                    <span>May 2026</span>
+                </div>
+                <span className='about-item-title'>Master of Science in Computer & Information Systems</span>
+
+                <hr className="seperator"/>
+
+                <div className="about-item-title">
+                    <span>University of Florida</span>
+                    <span>August 2020</span>
+                </div>
+                <span className='about-item-title'>Bachelor of Arts in Criminology</span>
             </div>
         </>
     )

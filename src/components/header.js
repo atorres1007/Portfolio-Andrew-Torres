@@ -33,8 +33,6 @@ export default function Header (props) {
                 <Link to='/' className={toggleHeader('/')}>Home</Link>
                 <Link to='/about' className={toggleHeader('/about')}>About Me</Link>
                 <Link to='/projects' className={toggleHeader('/projects')}>Projects</Link>
-                <Link to='/resume' className={toggleHeader('/resume')}>Resume</Link>
-                <Link to='/contact' className={toggleHeader('/contact')}>Contact</Link>
             </nav>
         </header>
     )

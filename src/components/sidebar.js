@@ -14,8 +14,6 @@ export default function Sidebar(props) {
                 <Link to='/' onClick={props.handleSidebar}>Home</Link>
                 <Link to='/about' onClick={props.handleSidebar}>About Me</Link>
                 <Link to='/projects' onClick={props.handleSidebar}>Projects</Link>
-                <Link to='/resume' onClick={props.handleSidebar}>Resume</Link>
-                <Link to='/contact' onClick={props.handleSidebar}>Contact</Link>
             </nav>
         </div>
     )
