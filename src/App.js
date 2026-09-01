@@ -17,21 +17,21 @@ export const SidebarContext = React.createContext(null);
 
 function App() {
 
-    const [projects, setProjects] = useState([])
-  
-    useEffect(() => {
-      fetch('/projects.json')
-      .then(res => {return res.json(); })  
-      .then(data => {setProjects(data)})
-    }, [])
+  const [projects, setProjects] = useState([])
 
-    //Sidebar state to change on button click to track if it is open or not
-    const [sidebarOpen, setSidebarOpen] = useState(false)
+  useEffect(() => {
+    fetch('/projects.json')
+    .then(res => {return res.json(); })  
+    .then(data => {setProjects(data)})
+  }, [])
 
-    //Function to set the sidebar state to the opposite of its current state
-    function handleSidebar() {
-      setSidebarOpen(!sidebarOpen);
-    }
+  //Sidebar state to change on button click to track if it is open or not
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
+  //Function to set the sidebar state to the opposite of its current state
+  function handleSidebar() {
+    setSidebarOpen(!sidebarOpen);
+  }
 
   return (
     <div className="App">

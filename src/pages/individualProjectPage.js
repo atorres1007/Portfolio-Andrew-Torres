@@ -9,9 +9,12 @@ export default function IndividualProjectPage (props) {
 
     return (
         <div className="individual-project-page">
-            <a href={project.projectURL} className="imgURL" target="_blank" rel="noreferrer">
-                <img src={project.imgURL} alt={project.name}/>
-            </a>
+            <div className="individual-project-page-img">
+                <a href={project.projectURL} className="individual-project-page-imgURL" target="_blank" rel="noreferrer">
+                    <img src={project.imgURL} alt={project.name}/>
+                </a>
+            </div>
+            
            
             <p className="project-name">
                 <a href={project.projectURL} target="_blank" rel="noreferrer">

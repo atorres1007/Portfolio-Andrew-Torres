@@ -6,21 +6,28 @@
         "description": "Simple application that uses the MET Museum API to display random pieces."
     },
         {
+        "name": "PicPoc",
+        "projectURL":"https://github.com/CS683/project-atorres1007",
+        "imgURL": "/images/picpoc1.PNG",
+        "description": "Android social media application that supports user authentication, photo posting/deletion, user search/follow functionality, and profile editing."
+    },
+        {
+        "name": "Easy Jobs",
+        "projectURL":"https://github.com/atorres1007/EasyJobs",
+        "imgURL": "/images/EasyJobs.PNG",
+        "description": "Job search platform made with React, MongoDB, and Apollo GraphQL. Offers job searching/posting, application submission, and well as role-based authentication system."
+    },
+        {
+        "name": "Seen It",
+        "projectURL":"https://github.com/atorres1007/Movie-TV-Show-Rater",
+        "imgURL": "/images/film.png",
+        "description": "CRUD application made with Python that allows users to record, update, and delete movie and tv show titles via CSV file."
+    },
+        {
         "name": "Bonsai",
         "projectURL":"https://bonsai-website-clone-ufv9.vercel.app/",
         "imgURL": "/images/bonsai-project.jpeg",
         "description": "Clone of bonsai website I found with a nice UI and wanted to recreate."
-    },
-        {
-        "name": "Countries",
-        "projectURL":"https://countries-app-wine-two.vercel.app/",
-        "imgURL": "/images/countries-project.PNG",
-        "description": "Application that uses a countries API to let the user search for countries and receive information on that country"
-    },
-        {
-        "name": "AI Art",
-        "projectURL": "https://ai-art-generator-omega.vercel.app/",
-        "imgURL": "/images/ai-project.PNG",
-        "description": "AI art application that calls an AI API to create a piece of art based on the user's input"
     }
+
 ]

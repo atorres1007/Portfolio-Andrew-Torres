@@ -11,7 +11,7 @@ export default function ProjectsPage (props) {
             {projects.map((project) => (
                 <ProjectItem 
                     key={project.name}
-                    name={project.name} 
+                    name={project.name}  
                     imgURL={project.imgURL}
                 />
             ))}
